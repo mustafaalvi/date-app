@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ProfilesComponent } from './profiles/profiles.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    RouterModule
+    RouterModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
