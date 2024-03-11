@@ -1,0 +1,19 @@
+<div class="profile-container">
+    <!-- Display profile information -->
+    <div class="profile-image">
+      <img [src]="currentUser.imageUrl" alt="Profile Image">
+    </div>
+    <div class="profile-details">
+      <h2>{{ currentUser.name }}</h2>
+      <p>{{ currentUser.age }}</p>
+      <p>{{ currentUser.location }}</p>
+      <!-- Additional profile details -->
+    </div>
+    <!-- Action buttons -->
+    <div class="action-buttons">
+      <button>Edit Profile</button>
+      <button>View Statistics</button>
+      <button>Settings</button>
+    </div>
+  </div>
+  
