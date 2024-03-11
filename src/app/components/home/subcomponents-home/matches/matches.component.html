@@ -1,0 +1,19 @@
+<div class="matches-container">
+    <div class="match-card" *ngFor="let match of matches">
+      <!-- Display match information -->
+      <div class="match-image">
+        <img [src]="match.imageUrl" alt="Match Image">
+      </div>
+      <div class="match-details">
+        <h2>{{ match.name }}</h2>
+        <p>{{ match.location }}</p>
+        <!-- Additional match details -->
+      </div>
+      <!-- Action buttons -->
+      <div class="action-buttons">
+        <button (click)="initiateChat(match)">Chat</button>
+        <button (click)="sendGift(match)">Send Gift</button>
+      </div>
+    </div>
+  </div>
+  
