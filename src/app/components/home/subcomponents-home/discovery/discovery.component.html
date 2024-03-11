@@ -1,0 +1,19 @@
+<div class="discovery-container">
+    <div class="profile-card" *ngFor="let profile of profiles">
+      <!-- Display profile information -->
+      <div class="profile-image">
+        <img [src]="profile.imageUrl" alt="Profile Image">
+      </div>
+      <div class="profile-details">
+        <h2>{{ profile.name }}, {{ profile.age }}</h2>
+        <p>{{ profile.location }}</p>
+        <!-- Additional profile details -->
+      </div>
+      <!-- Quick action buttons -->
+      <div class="action-buttons">
+        <button (click)="likeProfile(profile)">Like</button>
+        <button (click)="passProfile(profile)">Pass</button>
+      </div>
+    </div>
+  </div>
+  
