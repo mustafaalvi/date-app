@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { MessagesComponent } from './messages/messages.component';
-import { ProfilesComponent } from './profiles/profiles.component';
-import { HomeComponent } from './home/home.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { ProfilesComponent } from './components/profiles/profiles.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
