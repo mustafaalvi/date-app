@@ -1,0 +1,20 @@
+[
+{
+    "name":"Person1", 
+    "age":"26", 
+    "location":"NYC",
+    "imageUrl":"/assets/images/b00b.png"
+}, 
+{
+    "name":"Person2", 
+    "age":"26", 
+    "location":"NYC",
+    "imageUrl":"/assets/images/b00b.png"
+},
+{
+    "name":"Person3", 
+    "age":"26", 
+    "location":"NYC",
+    "imageUrl":"/assets/images/b00b.png"
+}
+]
