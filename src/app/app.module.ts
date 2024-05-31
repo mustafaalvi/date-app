@@ -28,9 +28,9 @@ import { MyProfileComponent } from './components/home/subcomponents-home/my-prof
     ProfilesComponent,
     HomeComponent,
     NavComponent, 
-    DiscoveryComponent,
-    MatchesComponent,
-    MyProfileComponent
+    // DiscoveryComponent,
+    // MatchesComponent,
+    // MyProfileComponent
   ],
   imports: [
     BrowserModule,
