@@ -9,10 +9,15 @@ import { UserService } from '../../../../services/user.service';
 export class MyProfileComponent implements OnInit {
   currentUser: any;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService) { 
+    this.currentUser = "";
+  }
 
   ngOnInit(): void {
     // Fetch current user profile from the service
-    this.currentUser = this.userService.getCurrentUserProfile();
+    this.currentUser = this.userService.getCurrentUserProfile().subscribe(user => {
+      this.currentUser = user;
+    });
+    console.log(this.currentUser);
   }
 }
