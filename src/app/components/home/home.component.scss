@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    flex-direction: row; /* Adjust based on your layout needs */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    max-height: 10vh; /* Ensure body takes full height of the viewport */
+  }
+  
