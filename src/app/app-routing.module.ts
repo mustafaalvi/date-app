@@ -9,11 +9,12 @@ import { MyProfileComponent } from './components/home/subcomponents-home/my-prof
 import { MatchesComponent } from './components/home/subcomponents-home/matches/matches.component';
 
 const routes: Routes = [
+  {path:'', component: DiscoveryComponent},
   { 
     path: 'home', 
     component: HomeComponent,
     children: [
-      { path: '', redirectTo: 'discovery', pathMatch: 'full' }, // Redirect to 'discovery' by default
+      { path: '', component: DiscoveryComponent }, // Redirect to 'discovery' by default
       { path: 'discovery', component: DiscoveryComponent },
       { path: 'my-profile', component: MyProfileComponent }, // Corrected path to 'my-profile'
       { path: 'matches', component: MatchesComponent }
