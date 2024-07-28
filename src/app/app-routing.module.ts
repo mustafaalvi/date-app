@@ -9,7 +9,7 @@ import { MyProfileComponent } from './components/home/subcomponents-home/my-prof
 import { MatchesComponent } from './components/home/subcomponents-home/matches/matches.component';
 
 const routes: Routes = [
-  {path:'', component: DiscoveryComponent},
+  {path:'', component: HomeComponent},
   { 
     path: 'home', 
     component: HomeComponent,
