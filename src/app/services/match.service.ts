@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class MatchService {
   private apiUrl = 'http://localhost:8080/api/matches'; // Replace with your API endpoint
-  private mockUrl = './assets/ßmockMatches.json';
+  private mockUrl = './assets/mockMatches.json';
 
   constructor(private http: HttpClient) {}
 
