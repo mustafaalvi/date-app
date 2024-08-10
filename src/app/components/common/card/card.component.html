@@ -1,27 +1,21 @@
-<!-- <div class="card">
-    <img [src]="image" alt="Profile Image">
-    <h2>{{name}}</h2>
-    <p>{{description}}</p>
-</div> -->
-
-    <div class="discovery-container">
-        <div class="profile-card" *ngFor="let profile of profiles">
-        <!-- Display profile information as a card -->
-            <div class="card">
-                <div class="profile-image">
-                    <img [src]="profile.imageUrl" alt="Profile Image">
-                </div>
-                <div class="profile-details">
-                    <h2>{{ profile.name }}, {{ profile.age }}</h2>
-                    <p>{{ profile.location }}</p>
-                    <!-- Additional profile details -->
-                </div>
-                <!-- Quick action buttons -->
-                <div class="action-buttons">
-                    <button (click)="likeProfile(profile)">Like</button>
-                    <button (click)="passProfile(profile)">Pass</button>
-                </div>
-            </div>
-        </div>
-    </div>
-  
+<p>
+  Start editing to see some magic happen :)
+</p>
+<div id="viewport">
+  <ul class="stack" swing-stack  [stackConfig]="stackConfig"  #myswing1 (throwout)="onThrowOut($event)">
+    <!--<li swing-card #mycards1 [ngClass]="c.name" *ngFor="let c of cards">{{ c.symbol }}</li>-->
+    <li swing-card #mycards1 [ngClass]="c.name" *ngFor="let c of profiles"> <img [src]="c.imageUrl" class="fit-image"> </li>
+</ul>
+</div>
+<div id="source">
+    <p>Drag the playing cards out of the stack and let go. Dragging them
+      beyond the desk will throw them out of the stack. If you drag too
+      little and let go, the cards will spring back into place. You can
+      throw cards back into the stack after you have thrown them out.
+      Current demo logs the direction on left and bottom only (configurable
+      in the component).</p>
+    <p>Open the <a href="https://developer.chrome.com/devtools/docs/console">
+      Console</a> to view the associated events.<p>
+    <p>Demonstration of <a href="https://github.com/ksachdeva/angular2-swing">
+      https://github.com/ksachdeva/angular2-swing</a> implementation.</p>
+</div>

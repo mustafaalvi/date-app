@@ -17,10 +17,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatchesComponent } from './components/home/subcomponents-home/matches/matches.component';
-import { DiscoveryComponent } from './components/home/subcomponents-home/discovery/discovery.component';
-import { MyProfileComponent } from './components/home/subcomponents-home/my-profile/my-profile.component';
-
+import { CardComponent } from './components/common/card/card.component';
+import { SwingModule } from 'angular2-swing';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,18 +26,20 @@ import { MyProfileComponent } from './components/home/subcomponents-home/my-prof
     ProfilesComponent,
     HomeComponent,
     NavComponent, 
-    // DiscoveryComponent,
-    // MatchesComponent,
-    // MyProfileComponent
+    CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
     RouterModule, BrowserAnimationsModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, 
     MatButtonModule, MatMenuModule,
-    HttpClientModule
+    HttpClientModule,
+    SwingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // schemas: [
+  //   CUSTOM_ELEMENTS_SCHEMA
+  // ]
 })
 export class AppModule { }

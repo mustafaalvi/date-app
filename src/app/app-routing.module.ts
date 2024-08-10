@@ -7,9 +7,10 @@ import { HomeComponent } from './components/home/home.component';
 import { DiscoveryComponent } from './components/home/subcomponents-home/discovery/discovery.component';
 import { MyProfileComponent } from './components/home/subcomponents-home/my-profile/my-profile.component';
 import { MatchesComponent } from './components/home/subcomponents-home/matches/matches.component';
+import { CardComponent } from './components/common/card/card.component';
 
 const routes: Routes = [
-  {path:'', component: HomeComponent},
+  {path:'', component: CardComponent},
   { 
     path: 'home', 
     component: HomeComponent,

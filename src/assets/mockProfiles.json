@@ -1,20 +1,20 @@
 [
 {
-    "name":"Person1", 
+    "name":"ShawnProfile", 
     "age":"26", 
-    "location":"NYC",
+    "location":"Santa Barbara, CA",
     "imageUrl":"/assets/images/b00b.png"
 }, 
 {
-    "name":"Person2", 
-    "age":"26", 
-    "location":"NYC",
+    "name":"BoobProfile", 
+    "age":"18", 
+    "location":"San Francisco, CA",
     "imageUrl":"/assets/images/b00b.png"
 },
 {
-    "name":"Person3", 
-    "age":"26", 
-    "location":"NYC",
+    "name":"RajProfile", 
+    "age":"50", 
+    "location":"New York, NY",
     "imageUrl":"/assets/images/b00b.png"
 }
 ]
